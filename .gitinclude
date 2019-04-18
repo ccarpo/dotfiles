@@ -1,3 +1,4 @@
 .zshrc
 .oh-my-zsh/custom/*
-.tmux*
+.tmux.conf
+.tmux/plugins/tpm/*
