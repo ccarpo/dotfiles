@@ -1,2 +1,3 @@
 .zshrc
 .oh-my-zsh/custom/*
+.tmux*
