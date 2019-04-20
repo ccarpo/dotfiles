@@ -15,6 +15,8 @@
 ZSH_THEME="bullet-train"
 
 BULLETTRAIN_PROMPT_CHAR=λ
+BULLETTRAIN_CONTEXT_DEFAULT_USER=parnold
+
 
 # Set list of themes to pick from when loading at random
 # Setting this variable when ZSH_THEME=random will cause zsh to load
