@@ -10,3 +10,6 @@
 [submodule ".tmux/plugins/tpm"]
 	path = .tmux/plugins/tpm
 	url = https://github.com/tmux-plugins/tpm
+[submodule ".oh-my-zsh/custom/plugins/alias-tips"]
+	path = .oh-my-zsh/custom/plugins/alias-tips
+	url = https://github.com/djui/alias-tips
