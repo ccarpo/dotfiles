@@ -5,7 +5,7 @@
 # export PATH=$HOME/bin:/usr/local/bin:$PATH
 
 # Path to your oh-my-zsh installation.
-  export ZSH="/home/parnold/.oh-my-zsh"
+  export ZSH="/home/ccarpo/.oh-my-zsh"
 
 # Set name of the theme to load --- if set to "random", it will
 # load a random theme each time oh-my-zsh is loaded, in which case,
@@ -15,8 +15,8 @@
 ZSH_THEME="bullet-train"
 
 BULLETTRAIN_PROMPT_CHAR=λ
-BULLETTRAIN_CONTEXT_DEFAULT_USER=parnold
-
+BULLETTRAIN_CONTEXT_DEFAULT_USER=ccarpo
+BULLETTRAIN_NVM_PREFIX="☊ "
 
 # Set list of themes to pick from when loading at random
 # Setting this variable when ZSH_THEME=random will cause zsh to load
@@ -100,7 +100,7 @@ source $ZSH/oh-my-zsh.sh
 # alias zshconfig="mate ~/.zshrc"
 # alias ohmyzsh="mate ~/.oh-my-zsh"
 
-export PATH=/home/parnold/.local/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games
+export PATH=/home/ccarpo/.local/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games
 
 # Measure startup time
 #zprof
