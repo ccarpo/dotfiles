@@ -1,3 +1,0 @@
-pane	0	1	:nano	1	:*	1	:/home/parnold/.tmux/plugins/maglev	1	nano	:nano /home/parnold/.zshrc
-window	0	1	1	:*	b35d,238x60,0,0,0
-state	0	
