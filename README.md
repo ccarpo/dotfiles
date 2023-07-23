@@ -1,14 +1,10 @@
-# I3 with manjaro and custom configs
-## Install i3 with pacman
-sudo pacman -S i3-wm i3lock i3status dunst compton hsetroot rxvt-unicode xsel rofi fonts-noto fonts-mplus xsettingsd lxappearance scrot viewnior
+# Oh-My-Zsh with Powerlevel10k and atuin
+## Install it
+bash <(curl https://raw.githubusercontent.com/ccarpo/dotfiles/p10k/install.sh)
 
-## copy dotnet files
-cp .config/* ~/
-cp .Xresources ~/
-cp .xsettingsd ~/
 
-## Install DejaVu Mono Sans for Powerline
-git clone https://github.com/powerline/fonts.git
-chmod a+x fonts/install.sh
-./fonts/install.sh
-
+## Thanks for this great projecs
+* Powerlevel10k: https://github.com/romkatv/powerlevel10k#oh-my-zsh
+* Atuin: https://github.com/ellie/atuin
+* Oh-My-Zsh: https://github.com/ohmyzsh
+* Zsh: https://www.zsh.org/
