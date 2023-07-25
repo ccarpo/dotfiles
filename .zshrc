@@ -70,7 +70,7 @@
 # Custom plugins may be added to ~/.oh-my-zsh/custom/plugins/
 # Example format: plugins=(rails git textmate ruby lighthouse)
 # Add wisely, as too many plugins slow down shell startup.
-plugins=(git aws docker npm python sudo fast-syntax-highlighting autoupdate zsh-autosuggestions alias-tips dotfiles dockercompose)
+plugins=(git aws docker npm python sudo fast-syntax-highlighting autoupdate zsh-autosuggestions alias-tips dotfiles docker-compose)
 
 source $ZSH/oh-my-zsh.sh
 
