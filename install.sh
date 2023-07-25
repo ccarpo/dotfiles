@@ -53,4 +53,7 @@ if grep -q "^ZSH_THEME=" "$zshrc_file"; then
 else
   sed -i "1s|^|$zsh_theme\n|" "$zshrc_file"
 fi
+
+#FIX for zsh-alias
+sed -i -e 's/egrep/grep -E/g' ~/.oh-my-zsh/custom/plugins/alias-tips/alias-tips.plugin.zsh
 #TODO use preconfigured p10k rc file
