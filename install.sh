@@ -25,7 +25,7 @@ if [ -d ~/.oh-my-zsh ]; then
     rm -rf ~/.oh-my-zsh
 fi
 
-sh -c --skip-chsh --unattended "$(curl -fsSL https://raw.githubusercontent.com/subtlepseudonym/oh-my-zsh/feature/install-noninteractive/tools/install.sh)"
+sh -c "$(curl -fsSL https://raw.githubusercontent.com/subtlepseudonym/oh-my-zsh/feature/install-noninteractive/tools/install.sh)" --skip-chsh --unattended
 
 echo "Clone dotfiles repository"
 git clone -b p10k https://github.com/ccarpo/dotfiles.git --recurse-submodules ~
