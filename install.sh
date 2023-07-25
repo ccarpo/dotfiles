@@ -25,7 +25,7 @@ if [ -d ~/.oh-my-zsh ]; then
     rm -rf ~/.oh-my-zsh
 fi
 
-sh -c "$(curl -fsSL https://raw.githubusercontent.com/robbyrussell/oh-my-zsh/master/tools/install.sh)"
+sh -c --skip-chsh --unattended "$(curl -fsSL https://raw.githubusercontent.com/subtlepseudonym/oh-my-zsh/feature/install-noninteractive/tools/install.sh)"
 
 echo "Clone dotfiles repository"
 git clone -b p10k https://github.com/ccarpo/dotfiles.git --recurse-submodules ~
@@ -40,4 +40,5 @@ sudo curl -o /usr/share/fonts/MesloLGS\ NF\ Bold.ttf https://github.com/romkatv/
 
 echo "Install PowerLevel10k theme"
 git clone --depth=1 https://github.com/romkatv/powerlevel10k.git ${ZSH_CUSTOM:-$HOME/.oh-my-zsh/custom}/themes/powerlevel10k
-p10k configure
+sed -i 's/^ZSH_THEME=.*/ZSH_THEME="powerlevel10k\/powerlevel10k"/' ~/.zshrc
+#p10k configure
