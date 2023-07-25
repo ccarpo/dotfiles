@@ -33,7 +33,7 @@ if [ -d ~/dotfiles ]; then
 fi
 git clone -b p10k https://github.com/ccarpo/dotfiles.git --recurse-submodules ~/dotfiles
 cp -rf ~/dotfiles/.* ~
-sed -i -e 's/<<replaceuser>>/$(whoami)/g' .zshrc
+sed -i -e 's/<<replaceuser>>/$(whoami)/g' ~/.zshrc
 
 #TODO ask if you wnat to install it for this user only then use ~/.local/share/fonts instead
 echo "install p10k fonts"
