@@ -25,10 +25,11 @@ if [ -d ~/.oh-my-zsh ]; then
     rm -rf ~/.oh-my-zsh
 fi
 
-sh -c "$(curl -fsSL https://raw.githubusercontent.com/subtlepseudonym/oh-my-zsh/feature/install-noninteractive/tools/install.sh)" --skip-chsh --unattended
+RUNZSH=no sh -c "$(curl -fsSL https://raw.githubusercontent.com/subtlepseudonym/oh-my-zsh/feature/install-noninteractive/tools/install.sh)" --skip-chsh
 
 echo "Clone dotfiles repository"
-git clone -b p10k https://github.com/ccarpo/dotfiles.git --recurse-submodules ~
+git clone -b p10k https://github.com/ccarpo/dotfiles.git --recurse-submodules ~/dotfiles
+cp -rf ~/dotfiles/.* ~
 sed -i -e 's/<<replaceuser>>/$(whoami)/g' .zshrc
 
 #TODO ask if you wnat to install it for this user only then use ~/.local/share/fonts instead
