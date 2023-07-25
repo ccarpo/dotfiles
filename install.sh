@@ -1,6 +1,23 @@
 #/bin/bash
 #TODO check of distribution
-sudo apt install git zsh python python-pip curl -y
+
+# Check the Linux distribution
+if [ -f /etc/debian_version ]; then
+    # Debian or Ubuntu
+    echo "Detected Debian or Ubuntu distribution."
+    sudo apt update
+    sudo apt install -y git zsh python python-pip curl
+elif [ -f /etc/redhat-release ]; then
+    # Redhat based
+    echo "Detected Redhat distribution."
+    sudo yum install -y git zsh python python-pip curl
+elif [ -f /etc/arch-release ] || [ -f /etc/manjaro-release ]; then
+    # Manjaro or Arch Linux
+    echo "Detected Manjaro or Arch Linux distribution."
+    sudo pacman -Sy --noconfirm git zsh python python-pip curl
+else
+    echo "Unsupported distribution."
+fi
 
 sh -c "$(curl -fsSL https://raw.githubusercontent.com/robbyrussell/oh-my-zsh/master/tools/install.sh)"
 
