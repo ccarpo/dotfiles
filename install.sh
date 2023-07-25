@@ -51,6 +51,6 @@ zsh_theme="ZSH_THEME=\"powerlevel10k/powerlevel10k\""
 if grep -q "^ZSH_THEME=" "$zshrc_file"; then
   sed -i -e "s/^ZSH_THEME=.*/$zsh_theme/" "$zshrc_file"
 else
-  echo "$zsh_theme" >> "$zshrc_file"
+  sed -i "1s|^|$zsh_theme\n|" "$zshrc_file"
 fi
 #TODO use preconfigured p10k rc file
