@@ -18,6 +18,12 @@ else
     echo "Unsupported distribution."
 fi
 
+# Check if ~/.oh-my-zsh folder exists and delete it if it does
+if [ -d ~/.oh-my-zsh ]; then
+    echo "Deleting ~/.oh-my-zsh folder."
+    rm -rf ~/.oh-my-zsh
+fi
+
 sh -c "$(curl -fsSL https://raw.githubusercontent.com/robbyrussell/oh-my-zsh/master/tools/install.sh)"
 
 git clone -b p10k https://github.com/ccarpo/dotfiles.git --recurse-submodules ~
