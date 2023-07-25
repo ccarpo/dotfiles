@@ -24,8 +24,7 @@ if [ -d ~/.oh-my-zsh ]; then
     echo "Deleting old ~/.oh-my-zsh folder."
     rm -rf ~/.oh-my-zsh
 fi
-
-RUNZSH=no sh -c "$(curl -fsSL https://raw.githubusercontent.com/subtlepseudonym/oh-my-zsh/feature/install-noninteractive/tools/install.sh)" --skip-chsh
+sh -c "$(curl -fsSL https://raw.githubusercontent.com/ohmyzsh/ohmyzsh/master/tools/install.sh)" --skip-chsh --unattended
 
 echo "Clone dotfiles repository"
 git clone -b p10k https://github.com/ccarpo/dotfiles.git --recurse-submodules ~/dotfiles
