@@ -1,5 +1,4 @@
 #/bin/bash
-#TODO check of distribution
 
 # Check the Linux distribution
 if [ -f /etc/debian_version ]; then
