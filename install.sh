@@ -37,7 +37,7 @@ sed -i -e 's/<<replaceuser>>/'"$(whoami)"'/g' ~/.zshrc
 
 #TODO ask if you want to install it for this user only then use ~/.local/share/fonts instead
 echo "install p10k fonts"
-sud mkdir /usr/share/fonts/MesloLGS
+sudo mkdir /usr/share/fonts/MesloLGS
 sudo curl -o /usr/share/fonts/MesloLGS/MesloLGS\ NF\ Regular.ttf https://github.com/romkatv/powerlevel10k-media/raw/master/MesloLGS%20NF%20Regular.ttf
 sudo curl -o /usr/share/fonts/MesloLGS/MesloLGS\ NF\ Bold\ Italic.ttf https://github.com/romkatv/powerlevel10k-media/raw/master/MesloLGS%20NF%20Bold%20Italic.ttf
 sudo curl -o /usr/share/fonts/MesloLGS/MesloLGS\ NF\ Italic.ttf https://github.com/romkatv/powerlevel10k-media/raw/master/MesloLGS%20NF%20Italic.ttf
