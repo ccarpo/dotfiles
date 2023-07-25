@@ -44,5 +44,12 @@ sudo curl -o /usr/share/fonts/MesloLGS\ NF\ Bold.ttf https://github.com/romkatv/
 
 echo "Install PowerLevel10k theme"
 git clone --depth=1 https://github.com/romkatv/powerlevel10k.git ${ZSH_CUSTOM:-$HOME/.oh-my-zsh/custom}/themes/powerlevel10k
-sed -i 's/^ZSH_THEME=.*/ZSH_THEME="powerlevel10k\/powerlevel10k"/' ~/.zshrc
+zshrc_file=~/.zshrc
+zsh_theme="ZSH_THEME=\"powerlevel10k/powerlevel10k\""
+
+if grep -q "^ZSH_THEME=" "$zshrc_file"; then
+  sed -i -e "s/^ZSH_THEME=.*/$zsh_theme/" "$zshrc_file"
+else
+  echo "$zsh_theme" >> "$zshrc_file"
+fi
 #TODO use preconfigured p10k rc file
