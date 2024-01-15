@@ -15,14 +15,14 @@ alias mkdir="mkdir -p"
 #alias ..="cd .."
 #alias ...="cd ../.."
 if [[ "$(uname -s)" == "Linux" ]]; then
-  # we're on linux                     
-  #alias l-d="ls -lFad"                 
-  #alias l="ls -laF"                    
-  alias ll="ls -lFa | TERM=vt100 less" 
+  # we're on linux
+  #alias l-d="ls -lFad"
+  #alias l="ls -laF"
+  alias ll="ls -lFa | TERM=vt100 less"
 ##TODO add for windows
   alias myip="dig +short myip.opendns.com @resolver1.opendns.com"
   alias ips="ifconfig -a | perl -nle'/(\d+\.\d+\.\d+\.\d+)/ && print $1'"
-fi                                     
+fi
 
 # NETWORK
 alias external_ip="curl -s icanhazip.com"
