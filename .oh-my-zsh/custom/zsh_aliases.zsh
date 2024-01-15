@@ -2,7 +2,7 @@
 alias rmrf="rm -rf"
 alias psef="ps -ef"
 alias fuck='sudo $(fc -ln -1)'
-alias grep='GREP_COLOR="1;37;41" LANG=C grep --color=auto'
+alias grep='GREP_COLORS="1;37;41" LANG=C grep --color=auto'
 alias grepi='grep -i'
 alias wget="wget -c"
 alias rm='rm -i'
