@@ -1,6 +1,6 @@
 # Oh-My-Zsh with Powerlevel10k and atuin
 ## Install it
-bash <(curl https://raw.githubusercontent.com/ccarpo/dotfiles/p10k/install.sh)
+bash <(curl https://raw.githubusercontent.com/ccarpo/dotfiles/master/install.sh)
 
 
 ## Thanks for this great projecs
