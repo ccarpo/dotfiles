@@ -57,3 +57,5 @@ fi
 #FIX for zsh-alias
 sed -i -e 's/egrep/grep -E/g' ~/.oh-my-zsh/custom/plugins/alias-tips/alias-tips.plugin.zsh
 #TODO use preconfigured p10k rc file
+echo "Install atuin"
+bash <(curl https://raw.githubusercontent.com/atuinsh/atuin/main/install.sh)
