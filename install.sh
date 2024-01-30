@@ -31,7 +31,7 @@ if [ -d ~/dotfiles ]; then
     echo "Deleting old ~/dotfiles folder."
     rm -rf ~/dotfiles
 fi
-git clone -b p10k https://github.com/ccarpo/dotfiles.git --recurse-submodules ~/dotfiles
+git clone -b master https://github.com/ccarpo/dotfiles.git --recurse-submodules ~/dotfiles
 cp -rf ~/dotfiles/.* ~
 sed -i -e 's/<<replaceuser>>/'"$(whoami)"'/g' ~/.zshrc
 
