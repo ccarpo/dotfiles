@@ -6,6 +6,8 @@ if [ -f /etc/debian_version ]; then
     echo "Detected Debian or Ubuntu distribution."
     sudo apt update
     sudo apt install -y git zsh python3 python3-pip curl bat 
+    mkdir -p ~/.local/bin
+    ln -s /usr/bin/batcat ~/.local/bin/bat
 elif [ -f /etc/redhat-release ]; then
     # Redhat based
     echo "Detected Redhat distribution."
