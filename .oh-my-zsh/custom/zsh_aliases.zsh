@@ -60,4 +60,4 @@ alias kdesc='kubectl describe'
 alias kdel='kubectl delete'
 
 # DOCKER-COMPOSE
-alias dc='docker-compose'
+alias dc='docker compose'
