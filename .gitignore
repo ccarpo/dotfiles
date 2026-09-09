@@ -1,6 +1,5 @@
-/*
-!.gitignore
-!.gitinclude
-!**/custom/**
-example
-**/resurrect/**
+# Ignore everything except tracked dotfiles
+*.swp
+*.swo
+*~
+.DS_Store

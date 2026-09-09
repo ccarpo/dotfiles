@@ -1,0 +1,40 @@
+# Git configuration template
+# Personalize [user] section after install
+
+[user]
+	# name = Your Name
+	# email = your@email.com
+
+[pull]
+	rebase = false
+
+[init]
+	defaultBranch = main
+
+[core]
+	pager = delta
+	editor = vim
+
+[interactive]
+	diffFilter = delta --color-only
+
+[delta]
+	navigate = true
+	side-by-side = true
+	line-numbers = true
+	syntax-theme = Dracula
+
+[merge]
+	conflictstyle = diff3
+
+[diff]
+	colorMoved = default
+
+[alias]
+	st = status
+	co = checkout
+	br = branch
+	ci = commit
+	lg = log --oneline --graph --decorate --all
+	last = log -1 HEAD
+	unstage = reset HEAD --

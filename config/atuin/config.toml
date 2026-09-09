@@ -1,0 +1,36 @@
+## Atuin configuration
+## Full reference: https://docs.atuin.sh/configuration/config/
+
+## Sync server (set to your own server or leave default for atuin.sh)
+# sync_address = "https://api.atuin.sh"
+
+## Auto sync after every command
+# auto_sync = true
+
+## Search mode: prefix, fulltext, fuzzy, skim
+# search_mode = "fuzzy"
+
+## Filter mode: global, host, session, directory
+# filter_mode = "global"
+
+## Style: auto, full, compact
+# style = "auto"
+
+## Execute command immediately on Enter (tab to edit first)
+enter_accept = true
+
+## Filter secrets from history
+secrets_filter = true
+
+[stats]
+common_subcommands = [
+  "docker",
+  "apt",
+  "pacman",
+  "git",
+  "docker-compose",
+  "kubectl",
+  "systemctl",
+]
+
+common_prefix = ["sudo"]
